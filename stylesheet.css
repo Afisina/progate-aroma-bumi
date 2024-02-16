@@ -77,7 +77,8 @@ body {
   align-items: center;
 }
 
-.main-wrapper h2 {
+.main-wrapper h2,
+.detail-menu-wrapper h2 {
   color: #0f8b8d;
   border-bottom: 5px solid #ec9a29;
   font-weight: 800;
@@ -238,6 +239,7 @@ span {
   line-height: 29px;
   padding-top: 30px;
   padding-left: 30px;
+  border-radius: 30px 30px 0px 0px;
 }
 
 .footer-wrapper li {
@@ -307,4 +309,119 @@ span {
 
 .coffee-menu img {
   height: 140px;
+}
+
+.detail-menu-wrapper {
+  padding: 100px 150px;
+}
+
+.detail-menu-wrapper h1,
+.store-wrapper h1,
+.form-wrapper h1 {
+  font-weight: 800;
+  size: 48px;
+  line-height: 58px;
+  color: #0f8b8d;
+}
+
+.detail-menu-wrapper img {
+  float: left;
+}
+
+.store-wrapper,
+.form-wrapper {
+  padding: 100px 150px;
+}
+
+.outlet {
+  width: 474px;
+  height: 196px;
+  border-radius: 20px;
+  border: 1px solid #d2d2d2;
+  margin: 10px 0px;
+  padding: 20px;
+}
+
+.map img {
+  width: 572px;
+  border-radius: 20px;
+  border: 1px solid #d2d2d2;
+  margin-left: 30px;
+}
+
+.store {
+  display: flex;
+}
+
+/* Style inputs, select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #a8201a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
