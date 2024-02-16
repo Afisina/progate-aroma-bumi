@@ -11,14 +11,26 @@ body {
   border-radius: 0px 0px 30px 30px;
 }
 
+.header-menu {
+  height: 145px;
+  background-color: #0f8b8d;
+}
+
 .header-logo {
   float: left;
   padding-top: 40px;
   padding-left: 140px;
 }
 
-.header-logo img {
-  height: 50px;
+.header-logo img,
+.footer-logo img {
+  height: 67px;
+}
+
+.icon img {
+  height: 30px;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .header-list {
@@ -32,6 +44,13 @@ body {
   list-style: none;
   float: left;
   padding-left: 25px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.header-list li:hover {
+  color: #ec9a29;
 }
 
 .top-wrapper {
@@ -53,6 +72,9 @@ body {
 
 .main-wrapper {
   padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-wrapper h2 {
@@ -72,6 +94,10 @@ body {
 
 .main-1 .teks {
   padding-left: 400px;
+}
+
+.main-3 .teks {
+  padding-left: 550px;
 }
 
 .main-1 {
@@ -104,9 +130,8 @@ body {
 
 .main-3 {
   height: 453px;
-  width: 989px;
+  width: 925px;
   padding-top: 100px;
-  display: flex;
 }
 
 .main-3 img {
@@ -114,7 +139,7 @@ body {
   width: 450px;
   object-fit: cover;
   border-radius: 20px;
-  margin-right: 100px;
+  float: left;
 }
 
 .button-17 {
@@ -207,24 +232,79 @@ span {
 }
 
 .footer-wrapper {
-  width: 1440px;
   height: 260px;
   background-color: #143642;
   color: white;
+  line-height: 29px;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 
 .footer-wrapper li {
   list-style: none;
 }
 
-.footer-logo {
-  float: left;
+.footer-wrapper li:hover {
+  color: #ec9a29;
 }
 
-.footer-products {
+.footer-logo,
+.footer-products,
+.footer-store,
+.footer-contact {
   float: left;
+  padding-left: 40px;
 }
 
-.footer-store {
-  float: left;
+.menu-wrapper {
+  padding: 100px 200px;
+  text-align: center;
+  align-content: center;
+}
+
+.menu-wrapper h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #0f8b8d;
+}
+
+.menu-wrapper p {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.menu-feed {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.coffee-menu {
+  width: 216px;
+  height: 216px;
+  background-image: url("./asset/Coffee\ background.png");
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  margin: 30px;
+}
+
+.coffee-menu h2 {
+  font-weight: 700;
+  size: 20px;
+  line-height: 24px;
+  margin: 10px;
+}
+
+.coffee-menu p {
+  font-weight: 400;
+  size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.coffee-menu img {
+  height: 140px;
 }
