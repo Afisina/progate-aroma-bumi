@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="./stylesheet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:wght@600&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init(); // Initialize AOS
+    </script>
     <div class="header">
       <div class="header-logo">
         <img src="./asset/Logo White.png" />
@@ -30,14 +35,14 @@
     </div>
 
     <div class="main-wrapper">
-      <div class="main-1">
+      <div class="main-1" data-aos="fade-up">
         <img src="./asset/Who are we.jpg" />
         <div class="teks">
           <h2>Who are we?</h2>
           <p>We are Jakarta-based coffee and tea house focused on professionally brewing local sourced, high quality, coffee beans and tea leaves.</p>
         </div>
       </div>
-      <div class="main-2">
+      <div class="main-2" data-aos="fade-left">
         <img src="./asset/Our products.jpg" />
         <div class="teks">
           <h2>Product Showcase</h2>
@@ -45,7 +50,7 @@
           <button class="button-17" role="button">See our coffee and tea</button>
         </div>
       </div>
-      <div class="main-3">
+      <div class="main-3" data-aos="fade-right">
         <img src="./asset/Hang out with us.jpg" alt="" />
         <div class="teks">
           <h2>Hang out with us!</h2>
@@ -53,7 +58,7 @@
           <button class="button-17" role="button">Find our cafes</button>
         </div>
       </div>
-      <div class="main-4">
+      <div class="main-4" data-aos="zoom-in">
         <h2>Find us out at Instagram <span>@aroma_bumi</span>!</h2>
         <div class="feed">
           <img src="./asset/Feed 1.png" alt="" />

@@ -298,6 +298,7 @@ span {
   size: 20px;
   line-height: 24px;
   margin: 10px;
+  transition: transform 0.3s ease;
 }
 
 .coffee-menu p {
@@ -305,10 +306,21 @@ span {
   size: 18px;
   line-height: 22px;
   margin: 0;
+  transition: transform 0.3s ease;
 }
 
 .coffee-menu img {
   height: 140px;
+  transition: transform 0.3s ease;
+}
+
+.coffee-menu:hover img {
+  transform: translateY(-40%);
+}
+
+.coffee-menu:hover h2,
+.coffee-menu:hover p {
+  transform: translateY(600%);
 }
 
 .detail-menu-wrapper {
